@@ -46,3 +46,4 @@ del df_online_retail_complete['BankHolidayDate']
 
 #dump into a csv file the result
 df_online_retail_complete.to_csv('./data/df_online_retail_complete.csv')
+print("The file 'df_online_retail_complete.csv' has been created. The program has finished.")

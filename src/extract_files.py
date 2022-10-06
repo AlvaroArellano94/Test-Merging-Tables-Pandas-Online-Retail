@@ -7,7 +7,7 @@ API_KEY = os.getenv('API_KEY')
 
 def get_response_api_bank_holidays(country_iso_2_name:str, year_num:int) -> dict:
     """
-    This function needs to pass as arguments a country returns a JSON with the answer from "Festivos" API  
+    This function needs two arguments: one as country and the other as the year. It returns a JSON with information of bank holidays from "Festivos" API.
     """
     url = f'https://api.getfestivo.com/v2/holidays?country={country_iso_2_name}&year={year_num}&api_key={API_KEY}'
     response = requests.get(url)
@@ -17,7 +17,7 @@ def get_response_api_bank_holidays(country_iso_2_name:str, year_num:int) -> dict
 
 def get_bank_holidays_df_from_response(json_response:dict) -> object:
     """
-    This function needs to pass as argument a dictionary and it returns a df
+    This function needs to pass as argument a dictionary and it returns a dataframe.
     """
     list_of_dates = []
     bank_holiday_list_info = json_response['holidays']
@@ -35,7 +35,7 @@ def get_bank_holidays_df_from_response(json_response:dict) -> object:
 
 def get_bank_holidays_from_response(json_response:dict) -> set: 
     """
-    This function gets the response from "Festivos" API and returns a list of the bank holidays removing duplicate dates. 
+    This function gets the response of "Festivos" API and returns a list of the bank holidays. Also, it removes duplicate dates. 
     """
     bank_holiday_list_info = json_response['holidays']
     bank_holiday_dates_temp = set()

@@ -22,6 +22,7 @@ You can find an example of that ".env" file in the root directory of the project
 
 All data used in the project can be found in "data" folder (except the information from the API).
 "Online_Retail.xlsx": this is the dataset that has the transactions and the main information*. The dataset has been downloaded from: "https://archive.ics.uci.edu/ml/machine-learning-databases/00352/".
+
 "ISO_Codes_2.csv": this is the file that containts information about countries and "ISO_2" codes. It is used as a mapping table. The mapping table has been downloaded from: "https://pkgstore.datahub.io/core/country-list/data_csv/data/d7c9d7cfb42cb69f4422dec222dbbaa8/data_csv.csv".
 
 "API Festivos": from this API the project gets the information of bank holidays from each different country. The link is: "https://getfestivo.com/".**

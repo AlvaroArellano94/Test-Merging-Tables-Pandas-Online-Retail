@@ -15,7 +15,7 @@ pip3 install -r requirements.txt
 ```
 
 -Permissions needed:
-You need to have a file called ".env" that contains the variable "API_KEY" in order to be able to fetch the data. It is being this way in order to hide confidential information.
+You need to have a file called ".env" that contains the variable "API_KEY" in order to be able to fetch the data. It is this way in order to hide confidential information.
 You can find an example of that ".env" file in the root directory of the project with the name ".env.example".
 
 ### SOURCE DATA:
